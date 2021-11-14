@@ -3,64 +3,173 @@
     margin: 0;
 }
 body{
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-    width: 100%;
+  display: block;
+  width: 400px;
+  margin: 100px auto 0;
 }
-.todo{
-    margin: 30px 0;
+.checked {
+  text-decoration: line-through;
+}
+
+
+.test-anwers ul{
+	list-style: decimal;
+	padding-left: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	
+	flex-wrap: wrap;
+}
+.test-anwers ul li{
+	margin: 15px 30px;
+	border: 1px solid red;
+	padding: 5px;
+}
+
+/*APP*/
+
+.wrapper{
+	padding: 20px;
+	border: 1px solid blue;
+	border-radius: 11px;
+	margin-top: 30px;
+}
+h1{
+	text-align: center;
+	margin-bottom: 30px;
+}
+input {
+  margin: 0;
+  border: none;
+ max-width: 600px;
+	width: 100%;	
+
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+	border: 1px solid black;
+	border-radius: 12px;
+}
+.my_app__wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+	max-width: 900px;
+	margin: 0 auto;
+}
+#add-button{
+	width: 150px;
+	height: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	background: transparent;
+	color: red;
+	font-weight: 700;
+	border: 1px solid red;
+	border-radius: 11px;
+	cursor: pointer;
+	
+}
+#add-button:hover{
+	color: #fff;
+	background: red;
+	transition: 0.2s ease;
+}
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+#todo-list{
+	list-style: none;
+	max-width: 815px;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 30px;
+}
+#todo-list li{
+	margin: 10px 0;
+}
+.check-todo{
+	width: 20px;
+}
+.todo-item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	line-height: 1;
+	padding: 5px;
+}
+.todo-item:nth-child(odd){
+	background: #ccc;
+}
+.todo-item:nth-child(even){
+	color: #fff;
+	background: blue;
+}
+.delete{
+	    width: 20px;
+    height: 20px;
     display: flex;
-    flex-direction: column;
-}
-.todo input{
-    width: 400px;
-    height: 40px;
-    border-radius: 11px;
-    background: transparent;
-    color: #000;
-    padding: 0 10px;
-    margin: 0 auto;
-    border: 1px solid blue;
-    
-}
-.todo button{
-    width: 250px;
-    height: 40px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 15px;
     background: red;
     color: #fff;
     border: none;
-    border-radius: 11px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin: 0 auto;
-    margin-top: 20px; 
-    cursor: pointer;
+    position: relative;
+	font-size: 16px;
 }
-.todo button:hover{
-    background: blue;
-    transition: 0.2s ease;
+.delete:hover{
+	transition: 0.2s ease;
+	background: black;
 }
-
-.todo__list{   
-   width: 400px;
-   margin: 0 auto;
-   margin-top: 40px;   
+.todo-item input{
+	margin-right: 10px;
+	position: relative;
+	top: 0px;
+	width: 20px;
+	height: 20px;
 }
-.todo__list ul{
-    list-style: none;
-}
-.todo__list ul li{
-    font-size: 16px;
-    color: #000;
-    padding: 5px 10px;
-    border-bottom: 1px solid blue;
-    margin: 10px 0;
-    
+.addBtn:hover {
+  background-color: #bbb;
 }
